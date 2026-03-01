@@ -1,0 +1,8 @@
+namespace: monitoring
+targetCustomizations:
+  - name: kube-prometheus-stack
+    values:
+      - file:///helm-charts/kube-prometheus-stack/values.yaml
+clusterSelector:
+  matchLabels:
+    cluster-role: management
