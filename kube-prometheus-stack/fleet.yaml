@@ -6,4 +6,5 @@ targetCustomizations:
         cluster-role: management
     helm:
       releaseName: kube-prometheus-stack
-      valuesFiles: values.yaml
+      valuesFiles: 
+        - values.yaml
