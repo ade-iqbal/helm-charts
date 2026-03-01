@@ -1,4 +1,4 @@
-namespace: monitoring
+namespace: internal-monitoring
 targetCustomizations:
   - name: monitoring
     clusterSelector:
