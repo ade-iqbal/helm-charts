@@ -1,3 +1,4 @@
+defaultNamespace: monitoring
 targetCustomizations:
   - name: monitoring
     helm:
