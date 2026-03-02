@@ -609,7 +609,7 @@ alertmanager:
     ## Hosts must be provided if Ingress is enabled.
     ##
     hosts: 
-      - alertmanager.test.my.id
+      - alertmanager.local.my.id
       # - alertmanager.domain.com
 
     ## Paths to use for ingress rules - one path should match the alertmanagerSpec.routePrefix
@@ -1331,7 +1331,7 @@ grafana:
   ingress:
     ## If true, Grafana Ingress will be created
     ##
-    enabled: false
+    enabled: true
     # enabled: true
 
     ## IngressClassName for Grafana Ingress.
@@ -1355,7 +1355,7 @@ grafana:
     # hosts:
     #   - grafana.domain.com
     hosts: 
-      - grafana.test.my.id
+      - grafana.local.my.id
 
     ## Path for grafana ingress
     path: /
@@ -3733,7 +3733,7 @@ prometheus:
   #     someoneelse:$apr1$DMZX2Z4q$6SbQIfyuLQd.xmo/P0m2c.
 
   ingress:
-    enabled: false
+    enabled: true
 
     ingressClassName: ""
 
@@ -3749,7 +3749,7 @@ prometheus:
     # hosts:
     #   - prometheus.domain.com
     hosts: 
-      - prometheus.test.my.id
+      - prometheus.local.my.id
 
     ## Paths to use for ingress rules - one path should match the prometheusSpec.routePrefix
     ##
@@ -4955,7 +4955,7 @@ thanosRuler:
     unhealthyPodEvictionPolicy: AlwaysAllow
 
   ingress:
-    enabled: false
+    enabled: true
 
     ingressClassName: ""
 
@@ -4965,8 +4965,8 @@ thanosRuler:
 
     ## Hosts must be provided if Ingress is enabled.
     ##
-    hosts: []
-      # - thanosruler.domain.com
+    hosts: 
+      - thanosruler.local.my.id
 
     ## Paths to use for ingress rules - one path should match the thanosruler.routePrefix
     ##
