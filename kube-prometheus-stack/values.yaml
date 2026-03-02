@@ -1237,18 +1237,7 @@ grafana:
   ## Deploy default dashboards
   ##
   defaultDashboardsEnabled: true
-
-  livenessProbe:
-    initialDelaySeconds: 600
-    periodSeconds: 10
-    timeoutSeconds: 5
-    failureThreshold: 30
-
-  readinessProbe:
-    initialDelaySeconds: 60
-    periodSeconds: 10
-    timeoutSeconds: 5
-    failureThreshold: 12
+  
   ## Deploy GrafanaDashboard CRDs that reference dashboards from ConfigMaps when grafana-operator is used
   ## These settings control how dashboards are integrated with the Grafana Operator
   ## Note: End user still need to create is own kind: GrafanaDataSource for Prometheus
